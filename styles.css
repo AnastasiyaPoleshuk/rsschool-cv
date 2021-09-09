@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(183, 184, 185);
+    background-color: rgb(164, 166, 168);
     font-family: 'Urbanist', sans-serif;
     font-size: 25px;
     font-style: normal;
@@ -20,6 +20,7 @@ body{
     background-color: rgb(252, 185, 42);
     float: left;
     width: 30%;
+    box-shadow: -13px 6px 16px rgb(109, 109, 109);
 }
 
 .header{
@@ -33,7 +34,7 @@ body{
 
 h1{
     font-size: 130%;
-    font-weight: bold;
+    font-weight: bold   ;
     text-align: center;
     padding: 15px;
     margin: 0px;
@@ -53,9 +54,10 @@ h1{
     background-color:rgb(218, 159, 33);
 }
 
+
 .contact-inf{
     font-size: 30px;
-    font-weight: bold;
+    font-weight:lighter;
     text-align: center;
 }
 
@@ -67,17 +69,16 @@ h1{
     list-style-type: none;
 }
 
-.contacts-phone:hover{
-    color: rgb(183, 184, 185);
+a{
+    text-decoration: none;
+    color: black;
 }
 
-.contacts-vk:hover{
-    color: rgb(183, 184, 185);
+a:hover{
+    color: rgb(255, 255, 255);
 }
 
-.contacts-e-mail:hover{
-    color: rgb(183, 184, 185);
-}
+
 
 .skills-wraper{
     background-color:rgb(218, 159, 33);
@@ -85,7 +86,7 @@ h1{
 
 h2{
     font-size: 30px;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
 }
 
@@ -95,7 +96,87 @@ h2{
     align-items: center;
     margin: 0 auto;
     list-style-type: none;
+    margin-bottom: 8%;
 }
 
 /*END ASIDE*/
 
+/* MAIN */
+
+.main{
+    float: right;
+    width: 70%;
+    box-shadow: 13px 6px 16px rgb(109, 109, 109);
+    background-color: rgb(255, 255, 255);
+}
+
+.about-me{
+    background-color: rgb(252, 185, 42);
+    padding: 0px;
+}
+
+.about{
+    padding: 2% 10%;
+}
+
+.code-ex{
+    background-color: rgb(252, 185, 42);
+    padding: 0px;
+}
+
+.code{
+    width: 90%;
+    margin: 0px auto;
+    background: rgb(243, 244, 245);
+    border-radius: 40px;
+}
+
+.code-img{
+    margin: 0px;
+    width: 95%;
+    height: 65%;
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+.lang-wrapper{
+    background-color: rgb(252, 185, 42);
+    padding: 0px;
+}
+
+.lang-list{
+    padding-left: 40%;
+}
+
+/* END MAIN */
+
+.footer{
+    background-color: rgb(217, 220, 223);
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+
+.footer-year{
+    padding-right: 3%;
+    font-weight: bold;
+}
+
+.github{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding-top: 2%;
+}
+
+.RSS{
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+}

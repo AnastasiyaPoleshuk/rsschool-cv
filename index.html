@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,600;1,400&display=swap" rel="stylesheet">
     <title>Anastasiya Paliashuk CV</title>
 </head>
 <body>
@@ -48,8 +51,10 @@
             </section>
         </aside>
         <main class="main">
-            <section class="about-me">
-                <h2>ABOUT ME</h2>
+            <section>
+                <div class="about-me">
+                    <h2>ABOUT ME</h2>
+                </div>               
                 <p class="about">I have been independently studying HTML, CSS, JS for several years. 
                 For a better understanding and consolidation of knowledge, I pass the course with RS school again.
                 I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new skills in Front-end.
@@ -57,44 +62,33 @@
                 improve skills in coding and layout of sites and in the future employment in the field of IT.</p>
             </section>
             <section>
-                <h2>CODE EXAMPLE</h2>
-                <!-- <pre>
-                    <code>
-                        exports.avg = function avg (array) {
-                            if (array == null || array == undefined || array.length == 0){
-                              return 0;
-                          }else if (array.length==0){
-                            return 0; 
-                            }else {
-                              let sum=0;
-                              for(let i=0; i<array.length; i++){
-                                    sum += array[i];	
-                               };
-                              let a = sum/array.length;
-                              return a;
-                            };
-                        };
-                    </code>
-                </pre> -->
+                <div class="code-ex">
+                    <h2>CODE EXAMPLE</h2>
+                </div>
+                <div class="code">
+                    <img src="./img/code.png" alt="code example" class="code-img">
+                </div>
             </section>
             <seclion class="lang">
-                <h2>LANGUAGES</h2>
+                <div class="lang-wrapper">
+                    <h2>LANGUAGES</h2>
+                </div>
                 <ul class="lang-list">
-                    <li class="lang-eng">English (A2)</li>
-                    <li class="lang-ru">Russian (native)</li>
+                    <li class="lang-eng">English - A2</li>
+                    <li class="lang-ru">Russian - native</li>
                 </ul>
             </seclion>
-            <!-- <footer class="footer">
+            <footer class="footer">
                 <ul class="footer-list">
                     <li class="footer-git">
-                        <a href="https://github.com/AnastasiyaPoleshuk"><img src="./img/github.png" alt="github"></a>
+                        <a href="https://github.com/AnastasiyaPoleshuk"><img src="./img/github.png" alt="github" class="github"></a>
                     </li>
                     <li class="footer-rss">
-                        <a href="https://rs.school/"><img src="./img/RSS_logo.svg" alt="RS school"></a>
+                        <a href="https://rs.school/" ><img src="./img/RSS_logo.svg" alt="RS school" class="RSS"></a>
                     </li>
                     <li class="footer-year">created in 2021</li>
                 </ul>
-            </footer> -->
+            </footer>
         </main>
     </div>
 </body>

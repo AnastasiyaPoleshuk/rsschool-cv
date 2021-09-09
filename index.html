@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,200&display=swap" rel="stylesheet">
     <title>Anastasiya Paliashuk CV</title>
 </head>
 <body>
     <div class="container">
-        <aside>
+        <aside class="aside">
             <header class="header">
-                <h1>ANASTASIYA PALIASHUK</h1>
+                <h1>
+                    ANASTASIYA
+                    PALIASHUK
+                </h1>
             </header>
             <div class="cv-photo">
-                <img src="./img/cv_ava.jpg" alt="cv-photo">
+                <img src="./img/cv_ava.jpg" alt="cv-photo" class="cv-foto">
             </div>
             <section class="contacts">
                 <div class="contacts-wraper">
                     <h2 class="contact-inf">CONTACT INFORMATION</h2>
-                    <ul class="contacts-list">
-                        <li class="contacts-phone"><a href="tel:+3755948274" target="_blank">+375 44 594-82-74</a></li>
-                        <li class="contacts-vk"><a href="https://vk.com/poleshuk_anastasia" target="_blank">VK</a></li>
-                        <li class="contacts-e-mail"><a href="anastasiyapaliashuk@gmail.com" target="_blank">E-mail</a></li>
-                    </ul>
-                </div>
+                </div>    
+                <ul class="contacts-list">
+                    <li class="contacts-phone"><a href="tel:+3755948274" target="_blank">+375 44 594-82-74</a></li>
+                    <li class="contacts-vk"><a href="https://vk.com/poleshuk_anastasia" target="_blank">VK</a></li>
+                    <li class="contacts-e-mail"><a href="anastasiyapaliashuk@gmail.com" target="_blank">E-mail</a></li>
+                </ul>
             </section>
             <section class="skills">
-                <h2>SKILLS</h2>
+               <div class="skills-wraper">
+                    <h2>SKILLS</h2>
+               </div>
                 <ul class="skills-list">
                     <li class="skills-html5">HTML5</li>
                     <li class="skills-css">CSS</li>
@@ -52,7 +58,7 @@
             </section>
             <section>
                 <h2>CODE EXAMPLE</h2>
-                <pre>
+                <!-- <pre>
                     <code>
                         exports.avg = function avg (array) {
                             if (array == null || array == undefined || array.length == 0){
@@ -69,7 +75,7 @@
                             };
                         };
                     </code>
-                </pre>
+                </pre> -->
             </section>
             <seclion class="lang">
                 <h2>LANGUAGES</h2>
@@ -78,7 +84,7 @@
                     <li class="lang-ru">Russian (native)</li>
                 </ul>
             </seclion>
-            <footer class="footer">
+            <!-- <footer class="footer">
                 <ul class="footer-list">
                     <li class="footer-git">
                         <a href="https://github.com/AnastasiyaPoleshuk"><img src="./img/github.png" alt="github"></a>
@@ -88,7 +94,7 @@
                     </li>
                     <li class="footer-year">created in 2021</li>
                 </ul>
-            </footer>
+            </footer> -->
         </main>
     </div>
 </body>

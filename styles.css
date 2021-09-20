@@ -4,22 +4,42 @@ body{
     font-size: 25px;
     font-style: normal;
     color: black;
-    margin: 0px auto;
-    max-width: 70%;  
-    box-sizing: border-box;
 }
 
-.container{
-    
-    box-shadow: 1px 3px 3px rgb(109, 109, 109);
+.container{ 
+    margin: 0px auto;
+    max-width: 900px;  
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+@media (max-width: 900px){
+    .container{ 
+        max-width: 670px;  
+
+    }
+}
+
+@media (max-width: 692px){
+    .container{ 
+        max-width: 450px;  
+
+    }
+}
+
+@media (max-width: 467px){
+    .container{ 
+        max-width: none;  
+
+    }
 }
 
 /*ASIDE*/
 
 .aside{
     background-color: rgb(252, 185, 42);
-    float: left;
-    width: 30%;
+    height: 100%;
     box-shadow: -13px 6px 16px rgb(109, 109, 109);
 }
 
@@ -33,11 +53,29 @@ body{
 
 
 h1{
-    font-size: 130%;
+    font-size: 32px;
     font-weight: bold   ;
     text-align: center;
-    padding: 15px;
+    padding: 5%;
     margin: 0px;
+}
+
+@media (max-width: 900px){
+    h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 692px){
+    h1{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 467px){
+    h1{
+        font-size: 12px;
+    }
 }
 
 .cv-foto{
@@ -52,13 +90,6 @@ h1{
 
 .contacts-wraper{
     background-color:rgb(218, 159, 33);
-}
-
-
-.contact-inf{
-    font-size: 30px;
-    font-weight:lighter;
-    text-align: center;
 }
 
 .contacts-list{
@@ -79,15 +110,101 @@ a:hover{
 }
 
 
+.lang{
+    margin-bottom: 26%;
+}
 
-.skills-wraper{
+.lang-wrapper{
     background-color:rgb(218, 159, 33);
+    padding: 0%;
+}
+
+.lang-list{
+    padding-left: 30%;
 }
 
 h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: normal;
     text-align: center;
+    padding: 2% 10%;
+}
+
+@media (max-width: 900px){
+    h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 692px){
+    h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 467px){
+    h2{
+        font-size: 10px;
+    }
+}
+
+
+/*END ASIDE*/
+
+/* MAIN */
+
+.main{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 13px 6px 16px rgb(109, 109, 109);
+    
+}
+
+.about-me{
+    background-color: rgb(252, 185, 42);
+    padding: 0%;
+}
+
+.about{
+    padding: 2% 5%;
+    font-size: 25px;
+}
+
+@media (max-width: 900px){
+    .about{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 692px){
+    .about{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 467px){
+    .about{
+        font-size: 8px;
+    }
+}
+
+.code-ex{
+    background-color: rgb(252, 185, 42);
+    padding: 0%;
+}
+
+.code{
+    width: 90%;
+    margin: 0px auto;
+    background: rgb(243, 244, 245);
+    border-radius: 4%;
+}
+
+pre:hover{
+    background-color: rgb(217, 220, 223);
+}
+
+.skills-wraper{
+    background-color: rgb(252, 185, 42);
 }
 
 .skills-list{
@@ -99,59 +216,11 @@ h2{
     margin-bottom: 8%;
 }
 
-/*END ASIDE*/
-
-/* MAIN */
-
-.main{
-    float: right;
-    width: 70%;
-    box-shadow: 13px 6px 16px rgb(109, 109, 109);
-    background-color: rgb(255, 255, 255);
-}
-
-.about-me{
-    background-color: rgb(252, 185, 42);
-    padding: 0px;
-}
-
-.about{
-    padding: 2% 10%;
-}
-
-.code-ex{
-    background-color: rgb(252, 185, 42);
-    padding: 0px;
-}
-
-.code{
-    width: 90%;
-    margin: 0px auto;
-    background: rgb(243, 244, 245);
-    border-radius: 40px;
-}
-
-.code-img{
-    margin: 0px;
-    width: 95%;
-    height: 65%;
-    padding-left: 4%;
-    padding-top: 2%;
-}
-
-.lang-wrapper{
-    background-color: rgb(252, 185, 42);
-    padding: 0px;
-}
-
-.lang-list{
-    padding-left: 40%;
-}
-
 /* END MAIN */
 
 .footer{
     background-color: rgb(217, 220, 223);
+    padding-bottom: 0%;
 }
 
 .footer-list{
@@ -159,24 +228,37 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 0%;
     list-style-type: none;
 }
 
+.footer-git{
+    width: 30%;
+    
+}
+
+.footer-rss{
+    width: 30%;
+}
+
 .footer-year{
+    width: 30%;
     padding-right: 3%;
     font-weight: bold;
 }
 
 .github{
-    width: 50px;
-    height: 50px;
-    margin: 0px;
-    padding-top: 2%;
+    width: 40%;
+    margin: 0%;
+    padding-top: 6%;
+    padding-bottom: 6%;
 }
 
 .RSS{
-    width: 60px;
-    height: 60px;
-    margin: 0px;
+    width: 60%;
+    margin: 0%;
+}
+
+.year-wrapp{
+    width: 100%;
 }
